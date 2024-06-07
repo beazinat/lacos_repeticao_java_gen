@@ -21,6 +21,11 @@ public class Exercicio4 {
             System.out.println("5 - Homem Trans");
             System.out.println("6 - Outros");
             gender = scan.nextInt();
+            
+            while (gender < 1 || gender > 6) {
+            	System.out.println("Número inválido. Verifique as opções acima.");
+            	gender = scan.nextInt();
+            }
 
             System.out.println("Pessoa Desenvolvedora: ");
             System.out.println("1 - Backend");
@@ -28,6 +33,10 @@ public class Exercicio4 {
             System.out.println("3 - Mobile");
             System.out.println("4 - FullStack");
             devType = scan.nextInt();
+            
+            while (devType < 1 || gender > 4) {
+            	System.out.println("Número inválido. Verifique as opções acima.");
+            }
 
             total++;
             sumAge += age;
